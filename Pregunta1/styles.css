@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Roboto+Condensed:ital,wght@1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+.container{
+    width: 100%;
+}
+.seccion-principal{
+    width: 85%;
+    margin: 5% auto;
+}
+.seccion-principal .tittle{
+    width: 60%;
+}
+.seccion-principal .tittle h2{
+    font-size: 40px;
+    padding: 5px;
+    color: rgb(66, 66, 216);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin: 25px auto; 
+}
+.cards .card {
+    width: 100%;
+    position: relative;
+
+}
+.imagenes img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seccion-principal .content p {
+    font-size: 13px;
+    color: blue;
+    margin-top: 7px;
+}
+.seccion-principal .content a {
+    font-size: 10px;
+}
+@media screen  and (max-width:960px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .imagenes img{
+        width: 80%;
+    }  
+}
